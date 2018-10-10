@@ -29,7 +29,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTE-Iy-ehq">
                                                     <rect key="frame" x="56" y="16" width="273" height="21.5"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -127,10 +127,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="btnAdd" destination="kGJ-ZS-0YT" id="Hc9-WO-jod"/>
-                                    <outlet property="imgProfile" destination="GRs-cJ-Q90" id="uHe-pg-Ci6"/>
-                                    <outlet property="lblName" destination="BTE-Iy-ehq" id="BZG-6f-cq9"/>
-                                    <outlet property="lineSeparator" destination="HBu-3i-PMt" id="O4K-Bk-oHg"/>
+                                    <outlet property="btnAdd" destination="kGJ-ZS-0YT" id="qYA-i8-qeZ"/>
+                                    <outlet property="imgProfile" destination="GRs-cJ-Q90" id="Zmk-cQ-xse"/>
+                                    <outlet property="lblName" destination="BTE-Iy-ehq" id="gMH-rZ-5eb"/>
+                                    <outlet property="lineSeparator" destination="HBu-3i-PMt" id="t8I-EE-JZc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -143,7 +143,7 @@
                     <navigationItem key="navigationItem" title="Contact" id="JeP-FW-lyO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Navbar" destination="JeP-FW-lyO" id="Bdw-I9-Qch"/>
+                        <outlet property="Navbar" destination="JeP-FW-lyO" id="aHW-5E-L9W"/>
                         <outlet property="tableView" destination="BlK-sW-QI0" id="bW0-cr-gmb"/>
                     </connections>
                 </tableViewController>

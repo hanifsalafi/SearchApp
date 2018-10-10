@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B45FF0B216785B90031FD02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45FF0A216785B90031FD02 /* AppDelegate.swift */; };
 		9B45FF0D216785B90031FD02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45FF0C216785B90031FD02 /* ViewController.swift */; };
-		9B45FF10216785B90031FD02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B45FF0E216785B90031FD02 /* Main.storyboard */; };
+		9B45FF10216785B90031FD02 /* Invite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B45FF0E216785B90031FD02 /* Invite.storyboard */; };
 		9B45FF12216785BA0031FD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B45FF11216785BA0031FD02 /* Assets.xcassets */; };
 		9B45FF15216785BA0031FD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B45FF13216785BA0031FD02 /* LaunchScreen.storyboard */; };
 		9B45FF1D216787310031FD02 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B45FF1C216787310031FD02 /* ContactTableViewController.swift */; };
@@ -21,7 +21,7 @@
 		9B45FF07216785B90031FD02 /* SearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B45FF0A216785B90031FD02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B45FF0C216785B90031FD02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B45FF0F216785B90031FD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B45FF0F216785B90031FD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Invite.storyboard; sourceTree = "<group>"; };
 		9B45FF11216785BA0031FD02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B45FF14216785BA0031FD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B45FF16216785BA0031FD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				9B45FF0A216785B90031FD02 /* AppDelegate.swift */,
 				9B45FF0C216785B90031FD02 /* ViewController.swift */,
-				9B45FF0E216785B90031FD02 /* Main.storyboard */,
+				9B45FF0E216785B90031FD02 /* Invite.storyboard */,
 				9B45FF11216785BA0031FD02 /* Assets.xcassets */,
 				9B45FF13216785BA0031FD02 /* LaunchScreen.storyboard */,
 				9B45FF16216785BA0031FD02 /* Info.plist */,
@@ -133,7 +133,7 @@
 			files = (
 				9B45FF15216785BA0031FD02 /* LaunchScreen.storyboard in Resources */,
 				9B45FF12216785BA0031FD02 /* Assets.xcassets in Resources */,
-				9B45FF10216785B90031FD02 /* Main.storyboard in Resources */,
+				9B45FF10216785B90031FD02 /* Invite.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,12 +155,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B45FF0E216785B90031FD02 /* Main.storyboard */ = {
+		9B45FF0E216785B90031FD02 /* Invite.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9B45FF0F216785B90031FD02 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Invite.storyboard;
 			sourceTree = "<group>";
 		};
 		9B45FF13216785BA0031FD02 /* LaunchScreen.storyboard */ = {
@@ -295,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SearchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SearchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
