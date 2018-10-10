@@ -16,7 +16,6 @@ struct Model {
 
 class ContactTableViewController: UITableViewController {
     
-   
     @IBOutlet weak var Navbar: UINavigationItem!
     
     
@@ -30,16 +29,16 @@ class ContactTableViewController: UITableViewController {
         models = [
             Model(name:"Hulk", image:"user1"),
             Model(name:"Batman", image:"user2"),
-            Model(name:"Superman", image:"user3"),
-            Model(name:"Captain America", image:"user1"),
-            Model(name:"Iron man", image:"user2"),
+            Model(name:"Superman", image:"user1"),
+            Model(name:"Captain America", image:"user2"),
+            Model(name:"Iron man", image:"user1"),
             Model(name:"Wonder Woman", image:"user3"),
             Model(name:"Aquaman", image:"user1"),
             Model(name:"Batman", image:"user2"),
-            Model(name:"Superman", image:"user3"),
-            Model(name:"Captain America", image:"user1"),
-            Model(name:"Iron man", image:"user2"),
-            Model(name:"Wonder Woman", image:"user3")
+            Model(name:"Superman", image:"user1"),
+            Model(name:"Captain America", image:"user2"),
+            Model(name:"Iron man", image:"user1"),
+            Model(name:"Wonder Woman", image:"user4")
         ]
         
         tableView.dataSource = self
@@ -47,7 +46,6 @@ class ContactTableViewController: UITableViewController {
         searchController = UISearchController(searchResultsController: nil)
         
         setupSearchController()
-        
         
     }
 
@@ -64,14 +62,12 @@ class ContactTableViewController: UITableViewController {
             model = models[indexPath.row]
         }
         
-//        if filteredModel.count == 0 {
-//            cell.lineSeparator.isHidden = true
-//        }
+        let attString = NSMutableAttributedString(string: model.name)
         
-//        cell.textLabel?.text = model.name
-//        cell.imageView?.image = UIImage(named: model.image)
+        let range: NSRange = (model.name as NSString).range(of: searchController.searchBar.text!, options: .caseInsensitive)
+        attString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.sea, range: range)
         
-        cell.lblName.text = model.name
+        cell.lblName.attributedText = attString
         cell.imgProfile.image = UIImage(named: model.image)
         cell.btnAdd.layer.borderColor = UIColor.sea.cgColor
         cell.lineSeparator.backgroundColor = UIColor.seaBreeze
@@ -112,10 +108,16 @@ class ContactTableViewController: UITableViewController {
         searchController.searchBar.placeholder = "Cari nama teman kamu"
         searchController.searchBar.sizeToFit()
         searchController.searchBar.tintColor = UIColor(red: 56.0 / 255.0, green: 58.0 / 255.0, blue: 64.0 / 255.0, alpha: 1.0)
-        searchController.searchBar.setValue("Batal", forKey: "_cancelButtonText")
+        
+        let barButtonItem = UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+        barButtonItem.title = NSLocalizedString("Batal", comment: "")
+        barButtonItem.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 12), .foregroundColor : UIColor.black], for: .normal)
+        
         if let txfSearchField = searchController.searchBar.value(forKey: "_searchField") as? UITextField {
             txfSearchField.backgroundColor =  UIColor(white: 241.0 / 255.0, alpha: 1.0)
+            txfSearchField.font = UIFont.systemFont(ofSize: 14)
         }
+    
         tableView.tableHeaderView = searchController.searchBar
         
     }

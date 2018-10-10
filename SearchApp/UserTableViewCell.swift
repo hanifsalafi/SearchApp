@@ -11,9 +11,12 @@ import UIKit
 class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imgProfile: UIImageView!
+    
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var btnAdd: UIView!
+    
     @IBOutlet weak var lineSeparator: UIView!
+    
+    @IBOutlet weak var btnAdd: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
